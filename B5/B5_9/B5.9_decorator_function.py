@@ -15,7 +15,7 @@ def time_this(num=10):  # external function that accepts the number of iteration
                 iter_time = t1 - t0
                 print("iteration #{} -> {:.6f} seconds".format(_, iter_time))
                 timing += (t1 - t0)
-            print("\naverage time of a single iteration -> {:.6f}".format(timing / num))
+            print("\naverage time of a single iteration -> {:.6f} seconds".format(timing / num))
             return func()  # wrapper function returns function that was executed
 
         return wrapper  # decorator function returns wrapper function
